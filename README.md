@@ -1,17 +1,22 @@
 # Tic-Tac-Toe with Minimax Algorithm
 
-Running the Game
-Clone the repository:
-git clone https://github.com/ffenix7/Tick-Tack-Toe.git
-cd tictactoe_minimax
+![GitHub License](https://img.shields.io/github/license/ffenix7/Tick-Tack-Toe)
 
+## Running the Game
+Clone the repository:
+```bash
+git clone https://github.com/ffenix7/tick-tack-toe
+cd tick-tack-toe
+```
 Run the Python file:
+```python
 python runner.py
+````
 
 
 ## Overview
 
-This is an implementation of a Tic-Tac-Toe game in Python, featuring a Minimax algorithm for optimal gameplay. The code allows two players (X and O) to play on a 3x3 grid. The AI uses the Minimax strategy to determine the best possible move in any game state, ensuring an optimal strategy is followed for both players.
+This is an implementation of a Tic-Tac-Toe game in Python, where the player (either X or O) competes against an AI opponent. The AI uses the Minimax algorithm to make its moves, ensuring that it always plays optimally. The game takes place on a 3x3 grid, and the AI will analyze all possible future game states to determine the best move at any given time, making it a challenging opponent for the player.
 
 ## Features
 
@@ -52,33 +57,6 @@ This is an implementation of a Tic-Tac-Toe game in Python, featuring a Minimax a
 7. **Minimax Algorithm:**
    - The Minimax algorithm recursively evaluates possible future game states to determine the optimal move for the current player, assuming both players play optimally.
 
-## Code Structure
-
-- **`initial_state()`**: Initializes the board with an empty 3x3 grid.
-- **`player(board)`**: Determines which player's turn it is.
-- **`actions(board)`**: Returns a list of valid moves.
-- **`result(board, action)`**: Returns a new board state after a move.
-- **`winner(board)`**: Checks if there is a winner on the current board.
-- **`terminal(board)`**: Checks if the game has ended.
-- **`utility(board)`**: Returns the utility value of the board at the end of the game.
-- **`minimax(board)`**: Determines the best move using the Minimax algorithm.
-- **`minimax_value(board)`**: Evaluates the value of the board using the Minimax strategy.
-
 ## Exception Handling
 
 An `invalidAction` exception is raised if a player attempts to make an invalid move (i.e., selecting a cell that is already occupied).
-
-## Example Usage
-
-```python
-board = initial_state()
-print(player(board))  # Outputs 'X', since X always starts
-
-actions = actions(board)  # Returns list of all available moves
-new_board = result(board, actions[0])  # Makes a move at the first available position
-
-if terminal(new_board):
-    print(f"Game over! Winner: {winner(new_board)}")
-else:
-    best_move = minimax(new_board)
-    print(f"Best move for the current player: {best_move}")
