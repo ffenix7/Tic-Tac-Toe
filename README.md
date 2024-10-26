@@ -5,7 +5,7 @@
 ## Running the Game
 Clone the repository:
 ```bash
-git clone https://github.com/ffenix7/tick-tack-toe
+git clone https://github.com/ffenix7/tic-tac-toe
 cd tick-tack-toe
 ```
 Run the Python file:
