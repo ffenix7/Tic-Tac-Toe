@@ -6,7 +6,7 @@
 Clone the repository:
 ```bash
 git clone https://github.com/ffenix7/tic-tac-toe
-cd tick-tack-toe
+cd tic-tac-toe
 ```
 Run the Python file:
 ```python
