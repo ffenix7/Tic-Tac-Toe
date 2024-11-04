@@ -1,4 +1,4 @@
-# Tic-Tac-Toe with Minimax Algorithm
+# Tic-Tac-Toe with Minimax Algorithm (from Harvard CS 50 course)
 
 ![GitHub License](https://img.shields.io/github/license/ffenix7/Tick-Tack-Toe)
 
